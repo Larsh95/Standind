@@ -1,0 +1,119 @@
+/*
+Theme Name: Standind Child
+Theme URI: https://wordpress.org/themes/Standind/
+Author: Lars & Max
+Author URI: 
+Version: 1.5
+Template: twentytwenty
+Description: Standind Website
+Text Domain: Standindchild
+*/
+body {
+    background-color: white;
+    width:100%;
+    margin: 0;
+}
+.header {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+#site-content {
+	background-color:white;
+}
+/* md and up */
+    #middlesm, #leftsm, #rightsm #bgimgheadersm{
+        display:none;
+    }
+    .logo {
+        display: inline-block;
+        width: 50px; /*your dimensions*/
+        height: 50px;
+        background-image: url(assets/LOGO.svg);
+        background-size: cover;
+    }
+
+    #bgimgheadermd{
+        height: 136px;
+        margin: 0;
+        padding: 0;
+        background-image: url(assets/bgimgheader.svg);
+        background-size: cover;
+        background-position: center;
+        width: auto;
+        display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+ 		align-items: center;
+    }
+    
+    
+    #leftmd {
+        display:flex;
+        justify-content: flex-start;
+    }
+    
+    #middlemd {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        position: relative;
+    }
+    
+    #rightmd {
+        display:flex;
+        background-repeat: no-repeat;
+        align-items: center;
+        justify-content: center;
+        height: 75px; 
+        width: 100px; 
+        padding-right: 0px;
+		position: relative;
+  		float: right;
+    }
+
+
+
+    /* phone small */
+@media (max-width:600px){ 
+    #middlemd, #leftmd, #rightmd, #bgimgheadermd{
+        display:none;
+    }
+
+#bgimgheadersm{
+    height:100px;
+    margin: 0;
+    padding: 0;
+    background-image: url(assets/bgimgheader.svg);
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#leftsm {
+    display:flex;
+    justify-content: flex-start;
+    
+}
+
+#middlesm {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+}
+
+#rightsm {
+    display:none;
+}
+
+}
